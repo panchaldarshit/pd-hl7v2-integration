@@ -1,10 +1,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>pd-hl7v2-integration</groupId>
-  <artifactId>pd-hl7v2-integration</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>pd-hl7v2-integration</name>
-  	<build>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pd-hl7v2-integration</groupId>
+	<artifactId>pd-hl7v2-integration</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>pd-hl7v2-integration</name>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-base -->
+		<dependency>
+			<groupId>ca.uhn.hapi</groupId>
+			<artifactId>hapi-base</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-structures-v251 -->
+		<dependency>
+			<groupId>ca.uhn.hapi</groupId>
+			<artifactId>hapi-structures-v251</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-structures-v28 -->
+		<dependency>
+			<groupId>ca.uhn.hapi</groupId>
+			<artifactId>hapi-structures-v28</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-hl7overhttp -->
+		<dependency>
+			<groupId>ca.uhn.hapi</groupId>
+			<artifactId>hapi-hl7overhttp</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.10</version>
+		</dependency>
+	</dependencies>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -25,7 +63,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
